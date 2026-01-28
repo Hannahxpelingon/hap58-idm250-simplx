@@ -14,7 +14,6 @@ define('DB_USER',   $env_vars['DB_USERNAME']);
 define('DB_PASS',   $env_vars['DB_PASSWORD']);
 define('DB_NAME',   $env_vars['DB_NAME']);
 
-// Create database connection 
 $connection = new mysqli(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
 
 if ($connection->connect_error)
