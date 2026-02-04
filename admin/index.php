@@ -49,7 +49,7 @@
             </div>
 
             <div class="header-actions">
-                <button class="btn btn-primary" onclick="openCreateModal()">New SKU +</button>
+                <button class="btn btn-primary" >New SKU +</button>
             </div>
 
      
@@ -76,7 +76,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title">Create SKU</h2>
-                <button class="close-btn" onclick="closeModal('createModal')">&times;</button>
+                <button class="close-btn">&times;</button>
             </div>
             <form id="createForm">
                 <div class="modal-body">
@@ -127,7 +127,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-cancel" onclick="closeModal('createModal')">Cancel</button>
+                    <button type="button" class="btn btn-cancel" >Cancel</button>
                     <button type="submit" class="btn btn-create">Create</button>
                 </div>
             </form>
@@ -139,7 +139,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title">SKU Edit</h2>
-                <button class="close-btn" onclick="closeModal('editModal')">&times;</button>
+                <button class="close-btn">&times;</button>
             </div>
             <form id="editForm">
                 <input type="hidden" id="edit_id" name="id">
@@ -191,7 +191,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-cancel" onclick="closeModal('editModal')">Cancel</button>
+                    <button type="button" class="btn btn-cancel">Cancel</button>
                     <button type="submit" class="btn btn-save">Save</button>
                 </div>
             </form>
@@ -201,6 +201,3 @@
     <script src="js/script.js"></script>
 </body>
 </html>
-<?php
-$conn->close();
-?>
